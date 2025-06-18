@@ -4,21 +4,21 @@
 let my_money = 15;
 
 // Pizza price
-let pizza = 7;
+const pizza = 7;
 
 // Cupcake price
-let cupcake = 5;
+const cupcake = 5;
 
 // Change if I buy pizza
-let change = my_money - pizza;
+my_money = my_money - pizza;
 
 //document.write('Here is your change: ',change);
 
-if (change < cupcake) {
-    document.write('You cannot buy the cupcake, here is your order and your change: ',change);
-} else if (change === 0) {
+if (my_money < cupcake) {
+    document.write('You cannot buy the cupcake, here is your order and your change: ',my_money);
+} else if (my_money === 0) {
     document.write('Here is your order!');
 } else {
-    change = my_money - pizza - cupcake;
-    document.write('Here is your order and your change ', change,'!');
+    my_money = my_money - cupcake;
+    document.write('Here is your order and your change ', my_money,'!');
 }
