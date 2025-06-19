@@ -15,10 +15,14 @@ my_money = my_money - pizza;
 //document.write('Here is your change: ',change);
 
 if (my_money < cupcake) {
+
+    // document.write isn't commonly used, but it works
     document.write('You cannot buy the cupcake, here is your order and your change: ',my_money);
 } else if (my_money === 0) {
     document.write('Here is your order!');
 } else {
     my_money = my_money - cupcake;
-    document.write('Here is your order and your change ', my_money,'!');
+
+    // console.log is useful for checking if certain conditions are working correctly
+    console.log('Here is your order and your change!');
 }
